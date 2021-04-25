@@ -1,0 +1,27 @@
+---
+#layout: default
+title: PREFECTS GUILD
+---
+
+<div class="wrapper">
+    <div class="container">
+        <div class="justify-content-center">
+            <div class="row">
+                {% for post in site.posts %}
+                <div class="col-md-4 col-lg-3 mb-5 col-sm-6 mb-lg-0">
+                    <img src=" {{ site.baseurl }}/assets/img/faces/{{ post.img }} " alt="Raised circle image"
+                        class="mx-auto d-block img-fluid rounded-circle shadow-lg" style="width: 150px;">
+                    <div class="px-4">
+                        <div class="pt-4 text-center">
+                            <h5 class="title">
+                                <span class="d-block">{{ post.name }}</span>
+                                <small class="h6 text-muted">ipsum dolor.</small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
